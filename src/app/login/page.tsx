@@ -67,7 +67,7 @@ export default function LoginPage() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://abissinia-school.vercel.app/auth/callback",
+        redirectTo: "https://abissinia-school.vercel.app/auth/callback",
       },
     });
 
